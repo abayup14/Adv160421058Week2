@@ -15,6 +15,9 @@
             app:destination="@id/gameFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/actionResultFragment"
+            app:destination="@id/resultFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -28,6 +31,18 @@
             app:exitAnim="@android:anim/slide_in_left" />
         <argument
             android:name="player_name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.adv160421058week2.ResultFragment"
+        android:label="Result Screen"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/actionResultToMainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="skor"
             app:argType="string" />
     </fragment>
 </navigation>
