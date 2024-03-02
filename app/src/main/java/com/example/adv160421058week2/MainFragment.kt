@@ -49,9 +49,9 @@ class MainFragment : Fragment() {
                 })
                 dialog.create().show()
             } else {
+                val res = MainFragmentDirections.actionResultFragment(skor.toString())
+                Navigation.findNavController(it).navigate(res)
                 skor = 0
-                val result = MainFragmentDirections.actionResultFragment(skor.toString())
-                Navigation.findNavController(it).navigate(result)
             }
         }
     }
