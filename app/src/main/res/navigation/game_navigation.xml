@@ -18,6 +18,9 @@
         <action
             android:id="@+id/actionResultFragment"
             app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/actionOptionFragment"
+            app:destination="@id/optionFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -64,4 +67,9 @@
         android:name="com.example.adv160421058week2.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <dialog
+        android:id="@+id/optionFragment"
+        android:name="com.example.adv160421058week2.OptionFragment"
+        android:label="fragment_option"
+        tools:layout="@layout/fragment_option" />
 </navigation>

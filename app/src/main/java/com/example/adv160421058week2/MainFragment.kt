@@ -31,6 +31,10 @@ class MainFragment : Fragment() {
 //            val action = MainFragmentDirections.actionGameFragment(playerName)
 //            Navigation.findNavController(it).navigate(action)
 //        }
+        binding.btnOption.setOnClickListener {
+            val res = MainFragmentDirections.actionOptionFragment()
+            Navigation.findNavController(it).navigate(res)
+        }
         binding.txtAngka1.text = Random.nextInt(1, 100).toString()
         binding.txtAngka2.text = Random.nextInt(1, 100).toString()
         var skor = 0
