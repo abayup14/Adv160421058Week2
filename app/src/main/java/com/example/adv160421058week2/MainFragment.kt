@@ -49,9 +49,11 @@ class MainFragment : Fragment() {
                 })
                 dialog.create().show()
             } else {
-                val res = MainFragmentDirections.actionResultFragment(skor.toString())
+//                val res = MainFragmentDirections.actionResultFragment(skor.toString())
+//                Navigation.findNavController(it).navigate(res)
+//                skor = 0
+                val res = MainFragmentDirections.actionGameFragment("Bayu")
                 Navigation.findNavController(it).navigate(res)
-                skor = 0
             }
         }
     }
